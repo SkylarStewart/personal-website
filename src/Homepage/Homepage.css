@@ -80,8 +80,6 @@
     max-width: 1200px;
     width: 80%;
     text-align: left;
-    /* padding-left: 10px;
-    padding-right: 10px; */
     margin-top: 40px;
 }
 
@@ -115,7 +113,7 @@
 }
 
 .about-text {
-    font-family: "Noto Sans", "Bold";
+    font-family: "Noto Sans";
     font-size: 1.1rem;
     color: #383838;
     margin-top: -10px
@@ -142,7 +140,7 @@
 }
 
 .education-title {
-    font-family: "Noto Sans", "Bold";
+    font-family: "Noto Sans";
     font-size: 3rem;
     letter-spacing: .45rem;
     color: #383838;
@@ -166,7 +164,7 @@
 }
 
 .education-text {
-    font-family: "Noto Sans", "Bold";
+    font-family: "Noto Sans";
     font-size: 1.1rem;
     color: #383838;
     margin-top: -10px;
@@ -192,7 +190,7 @@
 }
 
 .work-title {
-    font-family: "Noto Sans", "Bold";
+    font-family: "Noto Sans";
     font-size: 3rem;
     letter-spacing: .45rem;
     color: #383838;
@@ -216,7 +214,7 @@
 }
 
 .work-text {
-    font-family: "Noto Sans", "Bold";
+    font-family: "Noto Sans";
     font-size: 1.1rem;
     color: #383838;
     margin-top: -10px;
@@ -227,13 +225,12 @@
 
 @media screen and (max-width: 768px) {
     .work-title {
-        font-size: 1.5rem;
+        font-size: 1.7rem;
     }
     
     .work-title-line  {
-        display: none;
-        border-top: 1px solid #383838;
-        border-bottom: 1px solid #383838;
+        border-top: 2.5px solid #613772;
+        border-bottom: 3px solid #613772;
     }
 
     .work-container {
@@ -244,14 +241,18 @@
         font-size: .7rem;
     }
 
+    .work-title-container{
+        justify-content: center;
+        text-align: center;
+    }
+
     .education-title {
-        font-size: 1.5rem;
+        font-size: 1.7rem;
     }
 
     .education-title-line  {
-        display: none;
-        border-top: 1px solid #383838;
-        border-bottom: 1px solid #383838;
+        border-top: 2.5px solid #613772;
+        border-bottom: 3px solid #613772;
     }
 
     .education-container {
@@ -264,13 +265,13 @@
     }
 
     .about-title {
-        font-size: 1.5rem;
+        font-size: 1.1rem;
+        letter-spacing: .2rem;
     }
 
     .about-title-line  {
-        display: none;
-        border-top: 1px solid #383838;
-        border-bottom: 1px solid #383838;
+        border-top: 2.5px solid #613772;
+        border-bottom: 3px solid #613772;
     }
 
     .about-container {
@@ -280,4 +281,126 @@
     .about-text {
         font-size: .9rem;
     }
+
+    .about-title-container{
+        margin-bottom: 30px;
+    
+    }
+}
+
+/*parts for the list */
+
+.obj-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+}
+
+.img-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.img-aws{
+    width: 167px;
+    height: 100px;
+}
+
+.img-ufl{
+    width: 167px;
+    height: 167px
+}
+
+.obj-text-container{
+    margin-top: 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    text-align: left;
+    align-items: left;
+    padding-left: 45px;
+}
+
+.obj-title{
+    font-family: "Noto Sans";
+    font-size: 1.75rem;
+    margin-top: 0px;
+    color: #383838;
+    line-height: 1.5rem;
+}
+
+.obj-subtitle{
+    font-family: "Noto Sans";
+    font-size: 1.1rem;
+    margin-top: 0px;
+    color: #383838;
+    line-height: 1.5rem;
+    margin-bottom: 0px;
+}
+
+.obj-location{
+    font-family: "Noto Sans";
+    font-size: 1.1rem;
+    margin-top: 0px;
+}
+
+.obj-description{
+    font-family: "Noto Sans";
+    font-size: .95rem;
+    margin-top: 0px;
+
+}
+
+@media screen and (max-width: 768px) {
+    .obj-container {
+        flex-direction: column;
+    }
+
+    .img-aws {
+        background-color: #f6f6f6;
+        width: 80vw;
+        height: auto;
+        margin-bottom: 30px;
+        padding: 5vw;
+        border-radius: 20px;
+    }
+
+    .img-ufl {
+        background-color: #f6f6f6;
+        width: 80vw;
+        height: auto;
+        margin-bottom: 30px;
+        padding: 5vw;
+        border-radius: 20px;
+    }
+
+
+    .obj-text-container{
+        align-self: center;
+        width: 90vw;
+        padding: 0px;
+    }
+
+    .obj-title{
+        font-size: 1.5rem;
+
+    }
+    
+    .obj-subtitle{
+        font-size: .95rem;
+    }
+    
+    .obj-location{
+        font-size: .95rem;
+    }
+    
+    .obj-description{
+        font-size: .95rem;
+    }
+
+    .about-text {
+        font-size: .95rem;
+    }
+    
 }
