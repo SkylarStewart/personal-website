@@ -28,7 +28,7 @@
 }
 
 .icon-style:hover {
-    color: #f2f2f2;
+    color: hsla(0, 0%, 95%, 0.856);
     transition: 0.2s ease-in-out;
     cursor: pointer;
 }
@@ -48,7 +48,6 @@
 @media screen and (max-width: 768px) {
     .footer-container {
         justify-content: center;
-        padding-left: 0pxs;
     }
     .text-container {
         display: none;
